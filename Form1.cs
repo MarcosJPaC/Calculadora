@@ -31,6 +31,42 @@ namespace Numeros1al9
                         break;
                     }
                     valor1 = double.Parse(lblNumeros.Text);
+                    double resultadolog = Math.Log(valor1);
+                    lblNumeros.Text = resultadolog + "";
+                    break;
+                case "Sen":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultadosen = Math.Sin(valor1);
+                    lblNumeros.Text = resultadosen + "";
+                    break;
+                case "Cos":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultadocos = Math.Cos(valor1);
+                    lblNumeros.Text = resultadocos + "";
+                    break;
+                case "Tan":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultadotan = Math.Tan(valor1);
+                    lblNumeros.Text = resultadotan + "";
+                    break;
+                case "Log":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    valor1 = double.Parse(lblNumeros.Text);
                     double resultado = Math.Sqrt(valor1);
                     lblNumeros.Text = resultado + "";
                     break;
