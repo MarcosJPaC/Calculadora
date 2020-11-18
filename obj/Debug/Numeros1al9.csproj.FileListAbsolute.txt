@@ -1,0 +1,10 @@
+C:\Users\Computadora\source\repos\Numeros1al9\bin\Debug\Numeros1al9.exe.config
+C:\Users\Computadora\source\repos\Numeros1al9\bin\Debug\Numeros1al9.exe
+C:\Users\Computadora\source\repos\Numeros1al9\bin\Debug\Numeros1al9.pdb
+C:\Users\Computadora\source\repos\Numeros1al9\obj\Debug\Numeros1al9.csprojAssemblyReference.cache
+C:\Users\Computadora\source\repos\Numeros1al9\obj\Debug\Numeros1al9.Form1.resources
+C:\Users\Computadora\source\repos\Numeros1al9\obj\Debug\Numeros1al9.Properties.Resources.resources
+C:\Users\Computadora\source\repos\Numeros1al9\obj\Debug\Numeros1al9.csproj.GenerateResource.cache
+C:\Users\Computadora\source\repos\Numeros1al9\obj\Debug\Numeros1al9.csproj.CoreCompileInputs.cache
+C:\Users\Computadora\source\repos\Numeros1al9\obj\Debug\Numeros1al9.exe
+C:\Users\Computadora\source\repos\Numeros1al9\obj\Debug\Numeros1al9.pdb
