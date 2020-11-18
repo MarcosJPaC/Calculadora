@@ -179,7 +179,7 @@
             this.btnResta.TabIndex = 11;
             this.btnResta.Text = "-";
             this.btnResta.UseVisualStyleBackColor = false;
-            this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
+            this.btnResta.Click += new System.EventHandler(this.Numeros19_Click);
             // 
             // btnMulti
             // 
@@ -191,7 +191,7 @@
             this.btnMulti.TabIndex = 12;
             this.btnMulti.Text = "X";
             this.btnMulti.UseVisualStyleBackColor = false;
-            this.btnMulti.Click += new System.EventHandler(this.btnMulti_Click);
+            this.btnMulti.Click += new System.EventHandler(this.Numeros19_Click);
             // 
             // BtnEntre
             // 
@@ -203,7 +203,7 @@
             this.BtnEntre.TabIndex = 13;
             this.BtnEntre.Text = "/";
             this.BtnEntre.UseVisualStyleBackColor = false;
-            this.BtnEntre.Click += new System.EventHandler(this.btnEntre_Click_1);
+            this.BtnEntre.Click += new System.EventHandler(this.Numeros19_Click);
             // 
             // btnIgual
             // 
@@ -215,7 +215,7 @@
             this.btnIgual.TabIndex = 14;
             this.btnIgual.Text = "=";
             this.btnIgual.UseVisualStyleBackColor = false;
-            this.btnIgual.Click += new System.EventHandler(this.button4_Click);
+            this.btnIgual.Click += new System.EventHandler(this.Numeros19_Click);
             // 
             // btnSuma
             // 
@@ -227,7 +227,7 @@
             this.btnSuma.TabIndex = 15;
             this.btnSuma.Text = "+";
             this.btnSuma.UseVisualStyleBackColor = false;
-            this.btnSuma.Click += new System.EventHandler(this.btnSuma_Click);
+            this.btnSuma.Click += new System.EventHandler(this.Numeros19_Click);
             // 
             // lblNumeros
             // 
@@ -248,7 +248,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "CE";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Numeros19_Click);
             // 
             // button2
             // 
@@ -260,7 +260,7 @@
             this.button2.TabIndex = 18;
             this.button2.Text = "RA";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Numeros19_Click);
             // 
             // button3
             // 

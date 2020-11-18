@@ -14,93 +14,106 @@ namespace Numeros1al9
 
     public partial class Form1 : Form
     {
-        double primero;
-        double segundo;
-        string operacion;
-        double resultado;
+        double valor1, valor2;
+        string operacion = "";
         public Form1()
         {
             InitializeComponent();
         }
         private void Numeros19_Click(object sender, EventArgs e)
         {
-            lblNumeros.Text += ((Button)sender).Text;
-        }
-
-        private void btnSuma_Click(object sender, EventArgs e)
-        {
-            operacion = "+";
-            primero = double.Parse(lblNumeros.Text);
-            lblNumeros.Clear();
-        }
-
-        private void btnResta_Click(object sender, EventArgs e)
-        {
-            operacion = "-";
-            primero = double.Parse(lblNumeros.Text);
-            lblNumeros.Clear();
-        }
-
-        private void btnMulti_Click(object sender, EventArgs e)
-        {
-            operacion = "x";
-            primero = double.Parse(lblNumeros.Text);
-            lblNumeros.Clear();
-        }
-
-        private void btnEntre_Click_1(object sender, EventArgs e)
-        {
-            operacion = "/";
-            primero = double.Parse(lblNumeros.Text);
-            lblNumeros.Clear();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            segundo = double.Parse(lblNumeros.Text);
-            switch (operacion)
+            string textoboton= ((Button)sender).Text;
+            switch (textoboton)
             {
-                case "+":
-                    resultado = primero + segundo;
-                    lblNumeros.Text = resultado.ToString();
-                    break;
-                case "-":
-                    resultado = primero - segundo;
-                    lblNumeros.Text = resultado.ToString();
-                    break;
-                case "x":
-                    resultado = primero * segundo;
-                    lblNumeros.Text = resultado.ToString();
-                    break;
-                case "/":
-                    resultado = primero / segundo;
-                    lblNumeros.Text = resultado.ToString();
-                    break;
                 case "RA":
                     if (lblNumeros.Text == "")
                     {
                         break;
                     }
-                    resultado = Math.Sqrt(primero);
-                    lblNumeros.Text = resultado.ToString();
+                    valor1 = double.Parse(lblNumeros.Text);
+                    double resultado = Math.Sqrt(valor1);
+                    lblNumeros.Text = resultado + "";
                     break;
+                case "+":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    operacion = textoboton;
+                    valor1 = double.Parse(lblNumeros.Text);
+                    lblNumeros.Text = "";
+                    break;
+                case "-":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    operacion = textoboton;
+                    valor1 = double.Parse(lblNumeros.Text);
+                    lblNumeros.Text = "";
+                    break;
+                case "X":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    operacion = textoboton;
+                    valor1 = double.Parse(lblNumeros.Text);
+                    lblNumeros.Text = "";
+                    break;
+                case "/":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    operacion = textoboton;
+                    valor1 = double.Parse(lblNumeros.Text);
+                    lblNumeros.Text = "";
+                    break;
+                case "=":
+                    if (lblNumeros.Text == "")
+                    {
+                        break;
+                    }
+                    switch (operacion)
+                    {
+                        case "+":
+                            valor2 = double.Parse(lblNumeros.Text);
+                            lblNumeros.Text = valor1 + valor2 + "";
+                            break;
+                        case "-":
+                            valor2 = double.Parse(lblNumeros.Text);
+                            lblNumeros.Text = valor1 - valor2 + "";
+                            break;
+                        case "X":
+                            valor2 = double.Parse(lblNumeros.Text);
+                            lblNumeros.Text = valor1 * valor2 + "";
+                            break;
+                        case "/":
+                            valor2 = double.Parse(lblNumeros.Text);
+                            lblNumeros.Text = valor1 / valor2 + "";
+                            break;
+
+                    }
+                    break;
+                case "CE":
+                    lblNumeros.Clear();
+                    break;
+                case ".":
+                    if (lblNumeros.Text.IndexOf(".")==-1)
+                    {
+                        lblNumeros.Text += textoboton;
+                    }
+                    break;
+                default:
+                    lblNumeros.Text += ((Button)sender).Text;
+                    break;
+
             }
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            lblNumeros.Clear();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            operacion = "RA";
-            primero = double.Parse(lblNumeros.Text);
-            lblNumeros.Clear();
-        }
-
-
     }
-
-
 }
+
+
+
+
